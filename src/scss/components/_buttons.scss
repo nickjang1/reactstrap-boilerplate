@@ -1,0 +1,52 @@
+.btn-link {
+  color: $info;
+  &:hover {
+    color: rgba($info, .8);
+  }
+  &:focus {
+    @include box-shadow(none !important);
+  }
+}
+
+.btn-round {
+  border-radius: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @include media-breakpoint-down('sm') {
+    letter-spacing: 0;
+  }
+}
+
+.btn-has-char {
+  position: relative;
+  &::after {
+    position: relative;
+    margin-left: 5px;
+    font-size: 34px;
+    line-height: 20px;
+    vertical-align: text-bottom;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.btn-has-char-plus {
+  &::after {
+    content: "+";
+    position: relative;
+  }
+}
+
+.btn-has-char-chevron {
+  position: relative;
+  &::after {
+    content: "›";
+  }
+}
+
+@each $key, $value in $theme-colors {
+  .btn-has-char-#{$key} {
+    &::after {
+      color: $value !important;
+    }
+  }
+}

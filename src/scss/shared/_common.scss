@@ -1,0 +1,29 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+b {
+  font-weight: $font-weight-extrabold;
+}
+
+@each $type, $color in $theme-colors {
+  .title-underlined-#{$type} {
+    position: relative;
+    padding-bottom: 23px;
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 23px;
+      width: 50px;
+      height: 2px;
+      background-color: $color;
+    }
+  }
+}

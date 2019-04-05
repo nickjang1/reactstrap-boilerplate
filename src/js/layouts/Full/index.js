@@ -5,13 +5,6 @@ import Footer from './Footer';
 import Main from './Main';
 
 class Full extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
   render() {
     const {
       props

@@ -6,14 +6,12 @@ import { hot } from 'react-hot-loader';
 
 import { history } from './store';
 import Main from './scenes/Main';
-import ComingSoon from './scenes/ComingSoon';
 
 class App extends Component {
   render() {
     return (
       <Router history={history} onUpdate={() => { window.scrollTo(0, 0); }}>
         <Switch>
-          <Route path="/coming-soon" name="Coming Soon" component={ComingSoon} />
           <Route path="/" name="Main" component={Main} />
         </Switch>
       </Router>

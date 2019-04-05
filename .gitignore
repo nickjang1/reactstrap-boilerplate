@@ -6,3 +6,5 @@
 /compilation-stats.json
 .env
 .DS_Store
+package-lock.json
+yarn.lock

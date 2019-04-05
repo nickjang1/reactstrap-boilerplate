@@ -2,7 +2,7 @@ import React, {
   Component
 } from 'react';
 import {
-  Container, Row, Col,
+  Container
 } from 'reactstrap';
 
 import Section from '../../sections/Section';
@@ -13,11 +13,6 @@ class Main extends Component {
     return (
       <Section className="section-main bg-maze">
         <Container>
-          <Row>
-            <Col>Home</Col>
-            <Col>Home</Col>
-            <Col>Home</Col>
-          </Row>
         </Container>
       </Section>
     );

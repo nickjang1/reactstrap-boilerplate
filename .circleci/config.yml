@@ -22,7 +22,7 @@ jobs:
           command: |
             npx s3-deploy './dist/**' \
               --cwd './dist/' \
-              --bucket upoint-web \
+              --bucket Template-web \
               --region ap-southeast-2 \
               --cache "public, must-revalidate"
 

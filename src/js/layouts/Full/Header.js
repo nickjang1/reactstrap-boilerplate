@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-import {
-  Link, NavLink as LinkNav
-} from 'react-router-dom';
-
-import {
-  Nav, NavItem, NavLink
-} from 'reactstrap';
 
 class Header extends Component {
   render() {

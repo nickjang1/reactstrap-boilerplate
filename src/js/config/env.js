@@ -1,7 +1,5 @@
-// eslint-disable-next-line import/prefer-default-export
-export const env = {
+export default {
   apiLocation: process.env.API_LOCATION || '/',
   production: process.env.NODE_ENV === 'production',
-  environment: process.env.NODE_ENV || 'development',
-  mainUrl: process.env.MAIN_URL || '/launch'
+  environment: process.env.NODE_ENV || 'development'
 };

@@ -6,6 +6,7 @@ import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import reducers from './reducers';
+import FetchInterceptor from './interceptors/fetch';
 
 export const history = createBrowserHistory();
 
@@ -24,5 +25,8 @@ export const store = createStore(
     ...reducers,
     routing: routerReducer
   }),
-  composeWithDevTools(getMiddleware())
+  composeWithDevTools(
+    FetchInterceptor,
+    getMiddleware()
+  )
 );

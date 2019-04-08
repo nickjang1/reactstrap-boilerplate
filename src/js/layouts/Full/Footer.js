@@ -1,13 +1,12 @@
 import React from 'react';
 import {
-  Container, Row
+  Container
 } from 'reactstrap';
 
 export const FooterIntro = () => (
-  <div className="site-footer site-footer-intro">
+  <div className="site-footer">
     <Container>
-      <Row className="align-items-end">
-      </Row>
+      Footer
     </Container>
   </div>
 );

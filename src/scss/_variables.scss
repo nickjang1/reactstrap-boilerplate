@@ -1,7 +1,11 @@
 $container-gutter-width: 22px;
 
 $fonts: (
-  'AwesomeFreeFont':                 ( family: 'AwesomeFreeFont',       file: 'AwesomeFreeFont',                   weight: 400, style: normal ),
+  'OpenSans-Light':            ( family: 'OpenSans-Light',        file: 'OpenSans-Light',       weight: 300, style: normal ),
+  'OpenSans-Regular':          ( family: 'OpenSans-Regular',      file: 'OpenSans-Regular',     weight: 400, style: normal ),
+  'OpenSans-SemiBold':         ( family: 'OpenSans-SemiBold',     file: 'OpenSans-SemiBold',    weight: 600, style: normal ),
+  'OpenSans-Bold':             ( family: 'OpenSans-Bold',         file: 'OpenSans-Bold',        weight: 700, style: normal ),
+  'OpenSans-ExtraBold':        ( family: 'OpenSans-ExtraBold',    file: 'OpenSans-ExtraBold',   weight: 800, style: normal ),
 );
 
 $font-weights: (

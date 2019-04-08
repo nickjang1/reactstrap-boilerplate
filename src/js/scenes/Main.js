@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import {
@@ -8,10 +9,14 @@ import Layout from '../layouts/Full';
 import Home from './Home';
 
 class Main extends Component {
+  componentWillMount() {
+    fetch('http://localhost:2222/');
+  }
+
   render() {
     return (
       <Layout>
-        <Switch location={location}>
+        <Switch>
           <Route component={Home} path="/" />
         </Switch>
       </Layout>

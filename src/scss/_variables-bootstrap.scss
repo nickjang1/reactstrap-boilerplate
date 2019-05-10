@@ -381,7 +381,7 @@ $table-border-level:          -6 !default;
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 $input-btn-padding-y:         6px !default;
-$input-btn-padding-x:         8px !default;
+$input-btn-padding-x:         12px !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
@@ -1101,7 +1101,7 @@ $code-font-size:                    87.5% !default;
 $code-color:                        $pink !default;
 
 $kbd-padding-y:                     3.2px !default;
-$kbd-padding-x:                     4.8px !default;
+$kbd-padding-x:                     6.4px !default;
 $kbd-font-size:                     $code-font-size !default;
 $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;

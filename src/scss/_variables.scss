@@ -1,5 +1,10 @@
+// Bootstrap Variables
 $container-gutter-width: 22px;
 
+$primary: $primary;
+$theme-colors: map-merge($theme-colors, ("primary": $primary));
+
+// Application Variables
 $fonts: (
   'OpenSans-Light':            ( family: 'OpenSans-Light',        file: 'OpenSans-Light',       weight: 300, style: normal ),
   'OpenSans-Regular':          ( family: 'OpenSans-Regular',      file: 'OpenSans-Regular',     weight: 400, style: normal ),

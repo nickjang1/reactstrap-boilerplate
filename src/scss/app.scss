@@ -1,13 +1,9 @@
 // Functions
 @import "~bootstrap/scss/functions";
-
-// Variables
-@import "variables-bootstrap";
+// Bootstrap
+@import "~bootstrap/scss/variables";
 @import "variables";
 
-
-// Bootstrap
-// @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/alert";

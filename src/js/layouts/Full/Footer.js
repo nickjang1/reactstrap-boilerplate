@@ -6,7 +6,7 @@ import {
 export const FooterIntro = () => (
   <div className="site-footer">
     <Container>
-      Footer
+      Footer<div className="bg-primary">reasdfa</div>
     </Container>
   </div>
 );
